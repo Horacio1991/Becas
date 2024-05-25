@@ -1,0 +1,15 @@
+D:\c#\Becas\Becas\bin\Debug\Becas.exe.config
+D:\c#\Becas\Becas\bin\Debug\Becas.exe
+D:\c#\Becas\Becas\bin\Debug\Becas.pdb
+D:\c#\Becas\Becas\obj\Debug\Becas.csproj.AssemblyReference.cache
+D:\c#\Becas\Becas\obj\Debug\MainWindow.g.cs
+D:\c#\Becas\Becas\obj\Debug\App.g.cs
+D:\c#\Becas\Becas\obj\Debug\Becas_MarkupCompile.cache
+D:\c#\Becas\Becas\obj\Debug\Becas_MarkupCompile.lref
+D:\c#\Becas\Becas\obj\Debug\MainWindow.baml
+D:\c#\Becas\Becas\obj\Debug\Becas.g.resources
+D:\c#\Becas\Becas\obj\Debug\Becas.Properties.Resources.resources
+D:\c#\Becas\Becas\obj\Debug\Becas.csproj.GenerateResource.cache
+D:\c#\Becas\Becas\obj\Debug\Becas.csproj.CoreCompileInputs.cache
+D:\c#\Becas\Becas\obj\Debug\Becas.exe
+D:\c#\Becas\Becas\obj\Debug\Becas.pdb

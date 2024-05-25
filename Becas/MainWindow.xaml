@@ -1,0 +1,63 @@
+﻿<Window x:Class="Becas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Becas"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Primera columna -->
+        <StackPanel Grid.Column="0" Margin="10">
+            <Label Content="Legajo" />
+            <TextBox Name="txtLegajo" Margin="0,5" />
+
+            <Label Content="Apellido" />
+            <TextBox Name="txtApellido" Margin="0,5" />
+
+            <Label Content="Nombre" />
+            <TextBox Name="txtNombre" Margin="0,5" />
+
+            <Label Content="DNI" />
+            <TextBox Name="txtDNI" Margin="0,5" />
+
+            <Button Name="btn_AgregarAlumno" Content="Agregar Alumno" HorizontalAlignment="Center" Margin="10,20,10,0" Click="btn_AgregarAlumno_Click"/>
+        </StackPanel>
+
+        <!-- Segunda columna -->
+        <StackPanel Grid.Column="1" Margin="10">
+            <Label Content="Tipo de beca" />
+            <ComboBox Name="cmbCodigoBeca" Margin="0,5" SelectedIndex="0" SelectionChanged="cmbCodigoBeca_SelectionChanged">
+                <ComboBoxItem>Beca A</ComboBoxItem>
+                <ComboBoxItem>Beca B</ComboBoxItem>
+                <ComboBoxItem>Beca C</ComboBoxItem>
+            </ComboBox>
+
+            <Label Content="Monto Beca" />
+            <TextBox Name="txtMontoBeca" Margin="0,5" IsReadOnly="True" Height="25" />
+
+            <Label Content="Fecha de Otorgamiento" />
+            <DatePicker Name="dpFechaBeca" Margin="0,5" />
+
+            <Button Name="btn_OtorgarBeca" Content="Otorgar Beca" HorizontalAlignment="Center" Margin="10,20,10,0" Click="btn_OtorgarBeca_Click"/>
+        </StackPanel>
+
+        <!-- Tercer columna -->
+        <DataGrid Grid.Column="2" Name="dgAlumnos" AutoGenerateColumns="False" Margin="10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Legajo" Binding="{Binding Legajo}" />
+                <DataGridTextColumn Header="Apellido" Binding="{Binding Apellido}" />
+                <DataGridTextColumn Header="Nombre" Binding="{Binding Nombre}" />
+                <DataGridTextColumn Header="DNI" Binding="{Binding DNI}" />
+                <DataGridTextColumn Header="C.Beca" Binding="{Binding CodigoBeca}" />
+                <DataGridTextColumn Header="Fecha Otorgamiento" Binding="{Binding FechaOtorgamiento, StringFormat=\{0:d\}}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
